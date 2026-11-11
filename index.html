@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Essential Words 1 — rasmli lug‘at</title>
-  <meta name="description" content="4000 Essential English Words 1: 1–20-unitlardagi 400 ta so‘z rasmi, talaffuzi va o‘zbekcha tarjimasi bilan.">
+  <meta name="description" content="4000 Essential English Words 1: 1–20-unitlardagi 400 ta so‘z rasmi, talaffuzi va o‘zbekcha tarjimasi bilan, hamda 86 ta noto‘g‘ri fe’l guruhlarga bo‘lingan holda.">
   <meta name="theme-color" content="#E3E8E0">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Caveat:wght@500..700&display=swap">
   <link rel="stylesheet" href="styles.css">
   <script src="data/words.js" defer></script>
+  <script src="data/verbs.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -31,6 +32,7 @@
       <nav class="unitnav" aria-label="Unitlar">
         <ol class="unitnav__list" id="unitnav"></ol>
       </nav>
+      <a class="masthead__link" href="#/verbs"><span class="lg">Noto‘g‘ri fe’llar</span><span class="sm" aria-hidden="true">Fe’llar</span></a>
     </div>
   </header>
 
@@ -38,9 +40,11 @@
     <noscript><p class="noscript">Lug‘atni ko‘rish uchun brauzerda JavaScript yoqilgan bo‘lishi kerak.</p></noscript>
   </main>
 
+  <dialog id="practice" class="practice" aria-labelledby="practice-title" closedby="any"></dialog>
+
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__note">So‘zlar: <i>4000 Essential English Words 1</i> (Paul Nation). Rasmlar Wikimedia Commons’dan olingan; muallif va litsenziyani har bir rasm burchagidagi belgi orqali ko‘rish mumkin.</p>
+      <p class="footer__note">So‘zlar: <i>4000 Essential English Words 1</i> (Paul Nation). Rasmlar Wikimedia Commons’dan olingan; muallif va litsenziyani har bir rasm burchagidagi belgi orqali ko‘rish mumkin. Talaffuz yozuvlari Piper va Kokoro TTS bilan tayyorlangan (LibriTTS-R ovozi, CC BY 4.0).</p>
       <p class="footer__credit">
         <a class="footer__author" href="https://kamolbek.com" target="_blank" rel="noopener" title="kamolbek.com saytini ochish">created by Kamolbek Muzaffarov<svg class="footer__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
       </p>
