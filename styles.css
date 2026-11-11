@@ -589,20 +589,37 @@ h1:focus, h2:focus, h3:focus { outline: none; }
   margin-inline: auto;
   padding: 1.75rem var(--gutter) 2.25rem;
 }
-.footer__author {
-  font-weight: 800;
-  font-stretch: 112%;
-  font-size: 1.1rem;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-.footer__author:hover { background: var(--highlight); }
 .footer__note {
   max-width: 44rem;
-  margin: .6rem 0 0;
-  font-size: .875rem;
+  margin: 0;
+  font-size: .8rem;
   color: var(--muted);
 }
+.footer__credit {
+  margin: 1.25rem 0 0;
+  text-align: center;
+  font-size: .8rem;
+}
+.footer__author {
+  display: inline-flex;
+  align-items: center;
+  gap: .2rem;
+  padding: .15rem .3rem;
+  border-radius: 3px;
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.footer__author:hover,
+.footer__author:focus-visible {
+  color: var(--ink);
+  background: var(--highlight);
+  text-decoration-style: solid;
+}
+.footer__arrow { width: .85em; height: .85em; flex: none; }
 
 /* ---------- small screens ---------- */
 @media (max-width: 760px) {
