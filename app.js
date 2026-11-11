@@ -289,7 +289,7 @@
     return `
       <section class="plan" aria-labelledby="plan-title">
         <h2 class="vsec__title" id="plan-title">7 kunlik reja</h2>
-        <p class="vsec__lead">Har kuni yangi guruhlarni o‘rganing va oldingi kunlardagilarni takrorlang: 1, 3 va 6 kundan keyin. Shundan so‘ng 14- va 30-kuni aralash mashq qiling.</p>
+        <p class="vsec__lead">Har kuni yangi guruhlarni o‘rganing va oldingilarini takrorlang: ertasiga va 3 kundan keyin. 7-kuni hammasini aralash mashq qiling, keyin 14- va 30-kuni yana bir bor.</p>
         <div class="plan__wrap">
           <table class="plan__table" role="table" aria-labelledby="plan-title">
             <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Kun</th><th scope="col" role="columnheader">Yangi guruhlar</th><th scope="col" role="columnheader">Takrorlash</th></tr></thead>

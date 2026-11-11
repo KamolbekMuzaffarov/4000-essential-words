@@ -18,7 +18,7 @@
 - O‘zgaradigan harflar sariq bilan belgilangan (s**i**ng – s**a**ng – s**u**ng), har bir qatorda o‘zbekcha tarjima va tinglash tugmasi.
 - Test rejimi: 2- va 3-shakl yashiriladi, avval eslab, keyin ochasiz.
 - Mashq: guruh yoki aralash fe’llar bo‘yicha kartochkalar, bilmaganlaringiz qayta so‘raladi.
-- “Yodladim” belgisi va 7 kunlik takrorlash rejasi (1, 3 va 6 kundan keyin takrorlash).
+- “Yodladim” belgisi va 7 kunlik takrorlash rejasi: ertasiga va 3 kundan keyin takrorlash, 7-, 14- va 30-kuni aralash mashq.
 
 Usul xotira bo‘yicha tadqiqotlarga asoslangan: kichik guruhlarga bo‘lish (Miller, 1956; Cowan, 2001), ovoz chiqarib aytish (MacLeod va boshq., 2010), eslash orqali o‘rganish (Roediger va Karpicke, 2006), oraliqli takrorlash (Cepeda va boshq., 2006) va aralash mashq (Rohrer va Taylor, 2007).
 
