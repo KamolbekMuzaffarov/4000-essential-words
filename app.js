@@ -1,9 +1,10 @@
-/* Essential Words 1 — picture vocabulary (units 1–20) and irregular verbs
+/* Essential Words 1 — picture vocabulary (units 1–30) and irregular verbs
    Plain HTML/CSS/JS, hash routing: #/ (home), #/unit/N, #/unit/N/w/M, #/verbs, #/verbs/<group> */
 (() => {
   "use strict";
 
   const UNITS = window.WORDS || [];
+  const WORD_TOTAL = UNITS.reduce((n, u) => n + u.words.length, 0);
   const VERBS = window.VERBS || { stages: [], plan: [] };
   const main = document.getElementById("main");
   const nav = document.getElementById("unitnav");
@@ -176,7 +177,7 @@
       <section class="hero">
         <div>
           <h1 class="hero__title view-heading" tabindex="-1">Rasmli lug‘at</h1>
-          <p class="hero__lead"><i>4000 Essential English Words 1</i> kitobining 1–20-unitlari: 400 ta so‘z, har biri rasmi, talaffuzi va o‘zbekcha tarjimasi bilan.</p>
+          <p class="hero__lead"><i>4000 Essential English Words 1</i> kitobining 1–${UNITS.length}-unitlari: ${WORD_TOTAL} ta so‘z, har biri rasmi, talaffuzi va o‘zbekcha tarjimasi bilan.</p>
           <a class="btn" href="#/unit/1">1-unitdan boshlash ${icon("right")}</a>
         </div>
         <div class="hero__stage" id="featured">${featuredHTML()}</div>
@@ -602,6 +603,7 @@
     const inPage = route.view === "verbs" && lastView === "verbs";
     if (!document.startViewTransition || reduce || inPage) { update(route); focusAfter(route); return; }
     const t = document.startViewTransition(() => update(route));
+    t.ready.catch(() => { /* skipped by a newer navigation */ });
     t.finished.finally(() => focusAfter(route));
   }
 

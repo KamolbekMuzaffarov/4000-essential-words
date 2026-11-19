@@ -1,12 +1,12 @@
 # Essential Words 1 — rasmli lug‘at
 
-*4000 Essential English Words 1* kitobining 1–20-unitlari: 400 ta so‘z, har biri rasmi, talaffuzi va o‘zbekcha tarjimasi bilan. Alohida bo‘limda 86 ta noto‘g‘ri fe’l yodlash oson bo‘lgan guruhlarga ajratilgan.
+*4000 Essential English Words 1* kitobining 1–30-unitlari: 600 ta so‘z, har biri rasmi, talaffuzi va o‘zbekcha tarjimasi bilan. Alohida bo‘limda 86 ta noto‘g‘ri fe’l yodlash oson bo‘lgan guruhlarga ajratilgan.
 
 **Sayt:** https://kamolbekmuzaffarov.github.io/4000-essential-words/
 
 ## Imkoniyatlar
 
-- Har bir unit alohida sahifada (`#/unit/1` … `#/unit/20`), yuqoridagi raqamlar orqali tez o‘tish.
+- Har bir unit alohida sahifada (`#/unit/1` … `#/unit/30`), yuqoridagi raqamlar orqali tez o‘tish.
 - Har bir so‘z kartasida: rasm, inglizcha so‘z, so‘z turkumi, o‘zbekcha tarjima.
 - Talaffuz tugmasi har qanday telefonda ishlaydi: har bir so‘z va fe’l uchun tayyor audio yozuv bor, shuning uchun Telegram yoki Instagram ichidagi brauzerda ham ovoz chiqadi.
 - “Tarjimalarni yashirish” rejimi — o‘zingizni tekshirish uchun.
@@ -28,7 +28,7 @@ Usul xotira bo‘yicha tadqiqotlarga asoslangan: kichik guruhlarga bo‘lish (Mi
 index.html       sahifa
 styles.css       dizayn
 app.js           yo‘nalish, qidiruv, talaffuz, fe’llar va mashq
-data/words.js    400 ta so‘z va rasm ma’lumotlari
+data/words.js    600 ta so‘z va rasm ma’lumotlari
 data/verbs.js    86 ta fe’l, guruhlar va 7 kunlik reja
 images/uNN/      har bir unit rasmlari (WebP)
 audio/w/         so‘zlar talaffuzi (MP3)

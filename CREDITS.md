@@ -404,3 +404,17 @@ All pictures come from Wikimedia Commons and are used under the licence shown fo
 | 20 | vegetable | [Fresh homegrown vegetables assortment Dabrica, Bosnia and Herzegovina (2026)-bs.jpg](https://commons.wikimedia.org/wiki/File:Fresh_homegrown_vegetables_assortment_Dabrica,_Bosnia_and_Herzegovina_(2026)-bs.jpg) | Minja Klarić | CC BY-SA 4.0 |
 | 20 | war | [Battle of Guilford Courthouse 15 March 1781.jpg](https://commons.wikimedia.org/wiki/File:Battle_of_Guilford_Courthouse_15_March_1781.jpg) | H. Charles McBarron, The original uploader was Oldwildbill at English Wikipedia. | Public domain |
 | 20 | worth | [Winterswijk (NL), Wochenmarkt -- 2016 -- 4143.jpg](https://commons.wikimedia.org/wiki/File:Winterswijk_(NL),_Wochenmarkt_--_2016_--_4143.jpg) | Dietmar Rabich | CC BY-SA 4.0 |
+| 21 | brain | [Brain model 12.jpg](https://commons.wikimedia.org/wiki/File:Brain_model_12.jpg) | John Campbell | CC BY 2.0 |
+| 21 | nurse | [Nurse.jpg](https://commons.wikimedia.org/wiki/File:Nurse.jpg) | Countvictor | CC BY-SA 4.0 |
+| 21 | operation | [Cardiac surgery operating room.jpg](https://commons.wikimedia.org/wiki/File:Cardiac_surgery_operating_room.jpg) | Pfree2014 | CC BY-SA 4.0 |
+| 23 | course | [Lecture at MRU.jpg](https://commons.wikimedia.org/wiki/File:Lecture_at_MRU.jpg) | RainaKate | CC BY-SA 4.0 |
+| 25 | factory | [001 Car factory assembly line - Opel factory in Gliwice, Poland.jpg](https://commons.wikimedia.org/wiki/File:001_Car_factory_assembly_line_-_Opel_factory_in_Gliwice,_Poland.jpg) | Marek Ślusarczyk (Tupungato) Photo portfolio | CC BY 3.0 |
+| 25 | medicine | [Gfp-medicine-container-and-medicine-tablet.jpg](https://commons.wikimedia.org/wiki/File:Gfp-medicine-container-and-medicine-tablet.jpg) | Yinan Chen | Public Domain |
+| 25 | sign | [Ermitage road sign 2.jpg](https://commons.wikimedia.org/wiki/File:Ermitage_road_sign_2.jpg) | Reda Kerbouche | CC BY-SA 4.0 |
+| 25 | tip | [PencilTip.jpg](https://commons.wikimedia.org/wiki/File:PencilTip.jpg) | Christian Fischer | CC BY-SA 3.0 |
+| 25 | trash | [Smithsonian Folklife Festival 2011 - trash cans overflowing.JPG](https://commons.wikimedia.org/wiki/File:Smithsonian_Folklife_Festival_2011_-_trash_cans_overflowing.JPG) | User:AlbertHerring | CC BY-SA 3.0 |
+| 27 | coast | [Sandy coastline (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Sandy_coastline_(Unsplash).jpg) | FORREST CAVALE forrestcavale | CC0 |
+| 27 | desert | [Dunes, Désert du Thar.jpg](https://commons.wikimedia.org/wiki/File:Dunes,_D%C3%A9sert_du_Thar.jpg) | Clément Bardot | CC BY-SA 4.0 |
+| 27 | earthquake | [FEMA - 26813 - Photograph by Adam Dubrowa taken on 10-25-2006 in Hawaii.jpg](https://commons.wikimedia.org/wiki/File:FEMA_-_26813_-_Photograph_by_Adam_Dubrowa_taken_on_10-25-2006_in_Hawaii.jpg) | Adam Dubrowa | Public domain |
+| 27 | gift | [Gift (4344132308).jpg](https://commons.wikimedia.org/wiki/File:Gift_(4344132308).jpg) | Praveen from Bangalore, India | CC BY 2.0 |
+| 29 | advertise | [Ice cream advertisement (geograph 7158761).jpg](https://commons.wikimedia.org/wiki/File:Ice_cream_advertisement_(geograph_7158761).jpg) | Richard Sutcliffe | CC BY-SA 2.0 |
