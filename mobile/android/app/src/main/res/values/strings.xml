@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Essential Words</string>
+    <string name="title_activity_main">Essential Words</string>
+    <string name="package_name">com.kamolbek.essentialwords</string>
+    <string name="custom_url_scheme">com.kamolbek.essentialwords</string>
+</resources>

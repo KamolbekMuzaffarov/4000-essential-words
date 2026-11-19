@@ -1,0 +1,78 @@
+name: Android APK
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "mobile/**"
+      - ".github/workflows/android.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-apk
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: gradle
+
+      - name: Install Capacitor
+        run: npm ci
+
+      - name: Sync web shell into the Android project
+        run: npx cap sync android
+
+      - name: Use the private signing key if the repository has one
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/release.keystore"
+            echo "ANDROID_KEYSTORE_FILE=$RUNNER_TEMP/release.keystore" >> "$GITHUB_ENV"
+          fi
+
+      - name: Build APK
+        working-directory: mobile/android
+        env:
+          APP_VERSION_CODE: ${{ github.run_number }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          chmod +x gradlew
+          # empty secrets must not override the bundled key
+          [ -z "$ANDROID_KEYSTORE_PASSWORD" ] && unset ANDROID_KEYSTORE_PASSWORD ANDROID_KEY_ALIAS ANDROID_KEY_PASSWORD
+          ./gradlew assembleRelease --no-daemon
+          cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/EssentialWords.apk"
+
+      - name: Publish to the android-app release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: android-app
+          name: Essential Words — Android ilovasi
+          body: |
+            Telefoningizga yuklab oling va o‘rnating (Sozlamalarda "noma'lum manbalardan o‘rnatish"ga ruxsat bering).
+            Ilova saytni ochadi, shuning uchun yangi so‘zlar GitHub’ga qo‘shilishi bilan ilovada ham ko‘rinadi.
+            Qurilgan versiya: 1.${{ github.run_number }}
+          files: EssentialWords.apk
+          make_latest: true

@@ -1,0 +1,13 @@
+{
+  "appId": "com.kamolbek.essentialwords",
+  "appName": "Essential Words",
+  "webDir": "www",
+  "server": {
+    "url": "https://kamolbekmuzaffarov.github.io/4000-essential-words/",
+    "errorPath": "index.html",
+    "androidScheme": "https"
+  },
+  "android": {
+    "backgroundColor": "#E3E8E0"
+  }
+}

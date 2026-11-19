@@ -1,0 +1,14 @@
+{
+  "name": "essential-words-mobile",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Android app for the Essential Words 1 site; it opens the live GitHub Pages site, so every push to GitHub shows up in the app at once.",
+  "scripts": { "sync": "cap sync android" },
+  "dependencies": {
+    "@capacitor/android": "^7.4.0",
+    "@capacitor/core": "^7.4.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.0"
+  }
+}
