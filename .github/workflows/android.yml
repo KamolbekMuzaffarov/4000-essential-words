@@ -62,7 +62,12 @@ jobs:
           chmod +x gradlew
           # empty secrets must not override the bundled key
           [ -z "$ANDROID_KEYSTORE_PASSWORD" ] && unset ANDROID_KEYSTORE_PASSWORD ANDROID_KEY_ALIAS ANDROID_KEY_PASSWORD
-          ./gradlew assembleRelease --no-daemon
+          # Maven Central sometimes answers 429 (too many requests); try again before giving up
+          for i in 1 2 3; do
+            ./gradlew assembleRelease --no-daemon && break
+            [ "$i" = 3 ] && exit 1
+            sleep $((i * 30))
+          done
           cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/EssentialWords.apk"
 
       - name: Publish to the android-app release
