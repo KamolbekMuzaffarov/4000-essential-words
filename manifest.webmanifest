@@ -1,0 +1,17 @@
+{
+  "name": "Essential Words 1 — rasmli lug‘at",
+  "short_name": "Essential Words",
+  "description": "4000 Essential English Words 1: 600 ta so‘z rasmi, talaffuzi va o‘zbekcha tarjimasi bilan, hamda noto‘g‘ri fe’llar.",
+  "lang": "uz",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#E3E8E0",
+  "theme_color": "#E3E8E0",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

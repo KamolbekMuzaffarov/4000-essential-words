@@ -672,4 +672,25 @@
   nav.innerHTML = navHTML();
   edgeFades();
   render();
+
+  /* New words pushed to GitHub: when the page (or the Android app) comes back to the front,
+     check whether the word list changed and reload if it did. */
+  const dataStamp = async () => {
+    try {
+      const r = await fetch("data/words.js", { method: "HEAD", cache: "no-store" });
+      return r.ok ? (r.headers.get("etag") || r.headers.get("last-modified") || "") : "";
+    } catch { return ""; }
+  };
+  let stamp = "";
+  dataStamp().then((s) => { stamp = s; });
+  document.addEventListener("visibilitychange", async () => {
+    if (document.visibilityState !== "visible" || !stamp || dlg?.open) return;
+    const now = await dataStamp();
+    if (now && now !== stamp) location.reload();
+  });
+
+  /* offline support and "install app" (also used by the Android app) */
+  if ("serviceWorker" in navigator && location.protocol === "https:") {
+    addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => { /* optional */ }));
+  }
 })();

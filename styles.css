@@ -654,6 +654,19 @@ mark {
   font-size: .8rem;
   color: var(--muted);
 }
+.footer__app { margin: 1rem 0 0; font-size: .9rem; }
+.footer__app a {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .8rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--card);
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer__app a:hover { border-color: var(--ink); background: #FFF6C2; }
 .footer__credit {
   margin: 1.25rem 0 0;
   text-align: center;
